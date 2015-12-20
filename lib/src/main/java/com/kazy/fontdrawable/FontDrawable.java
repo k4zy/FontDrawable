@@ -19,9 +19,9 @@ import static android.util.TypedValue.applyDimension;
 
 public class FontDrawable extends Drawable {
 
-    final private Paint paint;
-
     final private char fontCode;
+
+    final private Paint paint;
 
     final private int size;
 
@@ -33,6 +33,13 @@ public class FontDrawable extends Drawable {
         this.paint.setColor(builder.color);
         this.size = builder.size;
         this.padding = builder.padding;
+    }
+
+    protected FontDrawable(char fontCode, Paint paint, int size, int padding) {
+        this.fontCode = fontCode;
+        this.paint = paint;
+        this.size = size;
+        this.padding = padding;
     }
 
     @Override
