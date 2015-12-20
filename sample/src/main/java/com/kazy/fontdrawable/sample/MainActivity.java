@@ -1,12 +1,14 @@
 package com.kazy.fontdrawable.sample;
 
 import com.kazy.fontdrawable.FontDrawable;
+import com.kazy.fontdrawable.FontProgressDrawable;
 
-import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.ColorInt;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,13 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     static final char SPACE_SHUTTLE_CODE = '\uf197';
 
-    static final char BICYCLE_CODE = '\uf206';
-
     @ColorInt
     static final int MATERIAL_BLUE = 0xff00a8f7;
-
-    @ColorInt
-    static final int MATERIAL_GREEN = 0xff009688;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         drawableImageView.setImageDrawable(spaceShuttle);
 
-        ImageView bitmapImageView = (ImageView) findViewById(R.id.bitmap_image_view);
-        Bitmap bicycle = new FontDrawable.Builder(this, BICYCLE_CODE, CUSTOM_FONT_PATH)
-                .setSizeDp(100)
-                .setColor(MATERIAL_GREEN)
-                .build()
-                .toBitmap();
-        bitmapImageView.setImageBitmap(bicycle);
+        RatingBar ratingBar = (RatingBar) findViewById(R.id.rating_bar);
+        FontProgressDrawable progressDrawable = new FontProgressDrawable.Builder(this, SPACE_SHUTTLE_CODE, CUSTOM_FONT_PATH)
+                .setProgressColor(MATERIAL_BLUE)
+                .setBackGroundColor(Color.LTGRAY)
+                .setPaddingDp(4)
+                .build();
+        ratingBar.setProgressDrawable(progressDrawable);
     }
+
 }
