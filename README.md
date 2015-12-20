@@ -25,7 +25,7 @@ How to
 
 ```groovy
   dependencies {
-    compile 'com.github.kazy1991:FontDrawable:0.9.0'
+    compile 'com.github.kazy1991:FontDrawable:0.9.1'
   }
 ```
 ##### Step 3. Add icon-font file to `main/assets`
