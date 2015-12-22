@@ -1,8 +1,9 @@
+Blog(japanese): http://qiita.com/kazy/items/c7d4dd13c49ef1de651d
+
 FontDrawable
 ============
 
 Convert Icon-font(e.g. font-awsome) to Drawable or Bitmap for Android.  
-Blog(japanese): http://qiita.com/kazy/items/c7d4dd13c49ef1de651d
 
 Update
 --------
