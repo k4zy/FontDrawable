@@ -1,12 +1,14 @@
 FontDrawable
 ============
 
-Convert Icon-font(e.g. font-awsome) to Drawable or Bitmap for Android.
+Convert Icon-font(e.g. font-awsome) to Drawable or Bitmap for Android.  
+Blog(japanese): http://qiita.com/kazy/items/c7d4dd13c49ef1de651d
 
 Update
 --------
-ver 0.9.1 Support ProgressDrawable. Please check sample.
-ver 0.9.0 First release.
+
+* ver 0.9.1 Support ProgressDrawable. Please check sample.
+* ver 0.9.0 First release.
 
 How to
 --------
