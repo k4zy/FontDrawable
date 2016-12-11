@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/kazy1991/FontDrawable.svg)](https://jitpack.io/#kazy1991/FontDrawable)
+
 Blog(japanese): http://qiita.com/kazy/items/c7d4dd13c49ef1de651d
 
 FontDrawable
@@ -7,6 +9,7 @@ Convert Icon-font(e.g. font-awsome) to Drawable or Bitmap for Android.
 
 Update
 --------
+* ver 0.9.3 Update build tool and gradle and target SDK and support libraries
 * ver 0.9.2 Downgrade min sdk verion. And Remove application properties
 * ver 0.9.1 Support ProgressDrawable. Please check sample.
 * ver 0.9.0 First release.
@@ -28,7 +31,7 @@ How to
 
 ```groovy
   dependencies {
-    compile 'com.github.kazy1991:FontDrawable:0.9.1'
+    compile 'com.github.kazy1991:FontDrawable:0.9.3'
   }
 ```
 ##### Step 3. Add icon-font file to `main/assets`
@@ -86,4 +89,3 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
