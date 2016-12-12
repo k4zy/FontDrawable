@@ -9,8 +9,9 @@ Convert Icon-font(e.g. font-awsome) to Drawable or Bitmap for Android.
 
 Update
 --------
-* ver 0.9.3 Update build tool and gradle and target SDK and support libraries
-* ver 0.9.2 Downgrade min sdk verion. And Remove application properties
+* ver 0.9.4 Update build tool.
+* ver 0.9.3 Update build tool and gradle and target SDK and support libraries.
+* ver 0.9.2 Downgrade min sdk verion. And Remove application properties.
 * ver 0.9.1 Support ProgressDrawable. Please check sample.
 * ver 0.9.0 First release.
 
