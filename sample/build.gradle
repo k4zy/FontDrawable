@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion compile_sdk_version as int
+    buildToolsVersion build_tools_version
 
     defaultConfig {
         applicationId "com.kazy.fontdrawable"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
         versionCode 1
         versionName "1.0"
     }
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile "com.android.support:appcompat-v7:$support_lib_version"
     compile project(':lib')
 }
