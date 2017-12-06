@@ -51,8 +51,8 @@ public class FontDrawable extends Drawable {
         final Path path = createTextPathBase();
         RectF textBounds = createTextBounds(path);
         applyPadding(path, textBounds, createPaddingBounds());
-        applyOffset(path, textBounds);
         path.close();
+        applyOffset(path, textBounds);
         return path;
     }
 
